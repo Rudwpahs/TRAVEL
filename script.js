@@ -318,8 +318,6 @@ function updateScene(index) {
   });
 
   renderSceneNav();
-  const current = sceneNav.querySelector(`[data-scene="${activeScene}"]`);
-  current?.scrollIntoView({ block: "nearest", inline: "center" });
 }
 
 function startAutoplay() {
