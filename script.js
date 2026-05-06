@@ -1,198 +1,352 @@
 const scenes = [
   {
     id: 1,
-    title: "\uD559\uAD50 \uB18D\uAD6C\uC7A5",
-    place: "\uD559\uAD50 \uB18D\uAD6C\uC7A5",
-    time: "\uD558\uAD50 \uC2DC\uAC04",
-    mood: "\uC678\uB85C\uC6C0",
+    title: "학교 농구장",
+    place: "학교 농구장",
+    time: "하교 시간",
+    mood: "외로움",
     location: "court",
     people: 1,
     focus: "a",
     emotion: 42,
-    camera: "\uB113\uC740 \uB18D\uAD6C\uC7A5\uC744 \uBE44\uC6CC \uB450\uACE0 \uC9C4\uD601\uC744 \uC791\uAC8C \uBC30\uCE58\uD55C\uB2E4. \uC29B\uC774 \uB4E4\uC5B4\uAC08 \uB54C\uB9C8\uB2E4 \uAE30\uC5B5\uC774 \uC9E7\uAC8C \uB04A\uACA8 \uBCF4\uC778\uB2E4.",
-    beat: "\uD63C\uC790 \uB0A8\uC740 \uC9C4\uD601\uC774 \uC29B\uC744 \uB358\uC9C0\uACE0, \uACF5\uC774 \uB9BC\uC5D0 \uB2FF\uAE30 \uC9C1\uC804 \uC7A5\uBA74\uC774 \uACFC\uAC70\uB85C \uB04A\uAE34\uB2E4.",
-    script:
-      "\uC774\uC9C4\uD601\uC774 \uD63C\uC790 \uC29B \uC5F0\uC2B5\uC744 \uD558\uACE0 \uC788\uB2E4. \uB18D\uAD6C\uC7A5\uC5D0\uB294 \uC0AC\uB78C\uB3C4 \uC5C6\uACE0, \uBD84\uC704\uAE30\uB294 \uC870\uC6A9\uD558\uB2E4. \uC774\uC9C4\uD601\uC758 \uD45C\uC815\uC740 \uC5B4\uB518\uAC00 \uC678\uB86D\uACE0 \uC2AC\uD37C \uBCF4\uC778\uB2E4.\n\uC29B\uC774 \uD558\uB098\uC529 \uB4E4\uC5B4\uAC04\uB2E4. \uC29B\uC774 \uB4E4\uC5B4\uAC08 \uB54C\uB9C8\uB2E4 \uAE40\uD558\uC5F0\uACFC\uC758 \uAE30\uC5B5\uC774 \uC9E7\uAC8C \uC2A4\uCCD0 \uC9C0\uB098\uAC04\uB2E4.\n\uC774\uC9C4\uD601\uC774 \uB9C8\uC9C0\uB9C9 \uC29B\uC744 \uB358\uC9C4\uB2E4. \uACF5\uC774 \uB9BC\uC5D0 \uB2FF\uAE30 \uC9C1\uC804\u2014\n\uCEF7.",
+    camera: "넓은 농구장을 비워 두고 진혁을 작게 배치한다. 슛이 들어갈 때마다 기억이 짧게 끊겨 보인다.",
+    beat: "혼자 남은 진혁이 슛을 던지고, 공이 림에 닿기 직전 장면이 과거로 끊긴다.",
+    script: `이진혁이 혼자 슛 연습을 하고 있다.
+농구장에는 사람도 없고, 분위기는 조용하다.
+이진혁의 표정은 어딘가 외롭고 슬퍼 보인다.
+슛이 하나씩 들어간다.
+슛이 들어갈 때마다 김하연과의 기억이 짧게 스쳐 지나간다.
+이진혁이 마지막 슛을 던진다.
+공이 림에 닿기 직전 - 컷.`,
   },
   {
     id: 2,
-    title: "\uD559\uAD50 \uB18D\uAD6C\uC7A5",
-    place: "\uD559\uAD50 \uB18D\uAD6C\uC7A5",
-    time: "\uC774\uB978 \uC544\uCE68, \uACFC\uAC70",
-    mood: "\uC124\uB818\uACFC \uBA38\uBB47\uAC70\uB9BC",
+    title: "학교 농구장",
+    place: "학교 농구장",
+    time: "이른 아침, 과거",
+    mood: "설렘과 머뭇거림",
     location: "court",
     people: 2,
     focus: "both",
     emotion: 34,
-    camera: "\uAC19\uC740 \uC7A5\uC18C\uB97C \uB354 \uBC1D\uACE0 \uCC28\uAC11\uAC8C \uBCF4\uC5EC \uACFC\uAC70\uC758 \uACF5\uAE30\uB97C \uB9CC\uB4E0\uB2E4. \uBCA4\uCE58 \uC704 \uD6C4\uB4DC\uC9D1\uC5C5\uC5D0 \uC7A0\uAE50 \uC2DC\uC120\uC744 \uACE0\uC815\uD55C\uB2E4.",
-    beat: "\uBC15\uBCF4\uC5F0\uC774 \uC9C4\uD601\uC758 \uB9C8\uC74C\uC744 \uB208\uCE58\uCC44\uACE0, \uD6C4\uB4DC\uC9D1\uC5C5\uC740 \uB2E4\uC74C \uC624\uD574\uC758 \uCD9C\uBC1C\uC810\uCC98\uB7FC \uB0A8\uB294\uB2E4.",
-    script:
-      "\uAC19\uC740 \uB18D\uAD6C\uC7A5, \uAC19\uC740 \uC704\uCE58. \uD558\uC9C0\uB9CC \uC2DC\uAC04\uC740 \uC774\uB978 \uC544\uCE68\uC774\uACE0 \uACF5\uAE30\uAC00 \uB2E4\uB974\uB2E4.\n\uC29B\uC774 \uB4E4\uC5B4\uAC04\uB2E4. \uB4A4\uCABD\uC5D0\uC11C \uBC15\uBCF4\uC5F0\uC774 \uAC78\uC5B4\uC628\uB2E4.\n\uBC15\uBCF4\uC5F0: \uD63C\uC790 \uBB50 \uD558\uB0D0?\n\uC774\uC9C4\uD601: \uBCF4\uBA74 \uBAA8\uB974\uB0D0. \uB18D\uAD6C\uD558\uC9C0.\n\uBC15\uBCF4\uC5F0: \uCE58, \uB204\uAD6C\uD55C\uD14C \uC798 \uBCF4\uC774\uB824\uACE0 \uADF8\uB7EC\uB0D0?\n\uC774\uC9C4\uD601: \uC74C... \u314B\u314B\n\uBC15\uBCF4\uC5F0: \uD5D0...! \uB204\uAD6C\uC57C?\n\uC774\uC9C4\uD601: \uB204\uAD74 \uAC83 \uAC19\uC560.\n\uBC15\uBCF4\uC5F0: \uAE40\uD558\uC5F0??\n\uC774\uC9C4\uD601: ...\uC5B4\uB5BB\uAC8C \uC54C\uC558\uB0D0.\n\uBCA4\uCE58 \uC704\uC5D0 \uC774\uC9C4\uD601\uC758 \uD6C4\uB4DC\uC9D1\uC5C5\uC774 \uB193\uC5EC \uC788\uB2E4. \uD6C4\uB4DC\uC9D1\uC5C5\uC5D0 \uD654\uBA74\uC774 \uC7A0\uC2DC \uBA38\uBB38\uB2E4.",
+    camera: "같은 장소를 더 밝고 차갑게 보여 과거의 공기를 만든다. 벤치 위 후드집업에 잠깐 시선을 고정한다.",
+    beat: "보연은 진혁의 마음을 눈치채고, 후드집업은 다음 오해의 출발점처럼 남는다.",
+    script: `같은 농구장, 같은 위치.
+하지만 시간은 이른 아침이고 공기가 다르다.
+슛이 들어간다.
+뒤쪽에서 박보연이 걸어온다.
+박보연: 혼자 뭐 하냐?
+이진혁: 보면 모르냐. 농구하지.
+박보연: 치, 누구한테 잘 보이려고 그러냐?
+이진혁: 음... ㅋㅋ
+박보연: 헐...! 누구야?
+이진혁: 누굴 것 같애.
+박보연: (고민하는 척하며) 음... 김하연??
+이진혁: ...어떻게 알았냐.
+박보연: ㅋㅋㅋㅋ 근데 너네 10년지기 아니야?
+이진혁: 그치... (씁쓸하게) 아 몰라, 암튼 그래.
+박보연: 헐...
+이진혁이 공을 챙긴다.
+박보연과 함께 계단 쪽으로 걸어간다.
+벤치 위에 이진혁의 후드집업이 놓여 있다.
+후드집업에 화면이 잠시 머문다.`,
   },
   {
     id: 3,
-    title: "\uAD50\uC2E4\uACFC \uBCF5\uB3C4",
-    place: "\uD559\uAD50 \uBC18, \uAC70\uC6B8 \uC55E\uACFC \uBCF5\uB3C4",
-    time: "\uC544\uCE68",
-    mood: "\uC18C\uBB38\uC774 \uC0DD\uAE30\uB294 \uC21C\uAC04",
+    title: "교실과 복도",
+    place: "학교 반, 거울 앞과 복도",
+    time: "아침",
+    mood: "소문이 생기는 순간",
     location: "class",
     people: 3,
     focus: "b",
     emotion: 48,
-    camera: "\uAC70\uC6B8, \uBCF5\uB3C4, \uAD50\uC2E4 \uC785\uAD6C\uB97C \uBE60\uB974\uAC8C \uC5F0\uACB0\uD55C\uB2E4. \uD558\uC5F0\uC774 \uB4E4\uC5B4\uC624\uB294 \uC21C\uAC04 \uC8FC\uBCC0 \uC2DC\uC120\uC774 \uD55C \uBC29\uD5A5\uC73C\uB85C \uBAA8\uC778\uB2E4.",
-    beat: "\uAD6C\uADDC\uBBFC\uC758 \uB9C8\uC74C\uC774 \uB4DC\uB7EC\uB098\uACE0, \uD558\uC5F0\uC774 \uC9C4\uD601\uC758 \uD6C4\uB4DC\uC9D1\uC5C5\uC744 \uB4E4\uACE0 \uB4F1\uC7A5\uD55C\uB2E4.",
-    script:
-      "\uAD6C\uADDC\uBBFC\uC774 \uAC70\uC6B8 \uC55E\uC5D0\uC11C \uBA38\uB9AC\uB97C \uC190\uC9C8\uD558\uACE0 \uC788\uB2E4. \uB2E4 \uC815\uB9AC\uD55C \uB4A4 \uAD50\uC2E4 \uBC16\uC73C\uB85C \uB098\uC628\uB2E4.\n\uB3D9\uAE09\uC0DD: \uD5D0, \uAE40\uD558\uC5F0\uC774\uB2E4!\n\uBB38\uC9C0\uC601: ? \uB108 \uAE40\uD558\uC5F0 \uC88B\uC544\uD574?\n\uAD6C\uADDC\uBBFC\uC740 \uACE0\uAC1C\uB97C \uC9E7\uAC8C \uB450 \uBC88 \uB044\uB355\uC778\uB2E4.\n\uAE40\uD558\uC5F0\uC774 \uAD50\uC2E4\uB85C \uB4E4\uC5B4\uC628\uB2E4. \uC190\uC5D0\uB294 \uC774\uC9C4\uD601\uC774 \uB193\uACE0 \uAC04 \uD6C4\uB4DC\uC9D1\uC5C5\uC774 \uB4E4\uB824 \uC788\uB2E4.\n\uBAA8\uB450\uC758 \uC2DC\uC120\uC774 \uAE40\uD558\uC5F0\uC5D0\uAC8C \uD5A5\uD55C\uB2E4.",
+    camera: "거울, 복도, 교실 입구를 빠르게 연결한다. 하연이 들어오는 순간 주변 시선이 한 방향으로 모인다.",
+    beat: "규민의 마음이 드러나고, 하연이 진혁의 후드집업을 들고 등장한다.",
+    script: `구규민이 거울 앞에서 머리를 손질하고 있다.
+다 정리한 뒤 교실 밖으로 나온다.
+복도에는 문지영, 박보연, 친구들이 있다.
+그때 옆을 지나가던 동급생이 말한다.
+동급생: 헐, 김하연이다!
+문지영이 구규민을 쳐다본다.
+문지영: ? 너 김하연 좋아해?
+구규민: (고개를 짧게 두 번 끄덕인다.)
+친구1: 넌 그것도 모르냐?
+친구2: 그니까 ㅋㅋ
+문지영: 헐... 하연이도 알아?
+구규민: 모르겠어. 아는지 모르는지.
+박보연: 어 야, 하연이 왔다.
+김하연이 교실로 들어온다.
+손에는 이진혁이 놓고 간 후드집업이 들려 있다.
+모두의 시선이 김하연에게 향한다.`,
   },
   {
     id: 4,
-    title: "\uC870\uD68C \uC804 \uAD50\uC2E4",
-    place: "\uD559\uAD50 \uBC18",
-    time: "\uC870\uD68C\uC2DC\uAC04 \uC804",
-    mood: "\uC2DC\uC120\uACFC \uC9C8\uD22C",
+    title: "조회 전 교실",
+    place: "학교 반",
+    time: "조회시간 전",
+    mood: "시선과 질투",
     location: "class",
     people: 3,
     focus: "both",
     emotion: 55,
-    camera: "\uD558\uC5F0, \uC9C4\uD601, \uC9C0\uC601 \uC21C\uC11C\uB85C \uD3EC\uCEE4\uC2A4\uB97C \uC774\uB3D9\uD574 \uAC10\uC815\uC758 \uBC29\uD5A5\uC744 \uBCF4\uC5EC\uC900\uB2E4.",
-    beat: "\uD558\uC5F0\uC740 \uD6C4\uB4DC\uC9D1\uC5C5\uC744 \uB3CC\uB824\uC8FC\uACE0, \uC9C0\uC601\uC740 \uC9C4\uD601\uC758 \uC2DC\uC120\uC744 \uBCF8 \uB4A4 \uD558\uC5F0\uC5D0\uAC8C \uADDC\uBBFC \uC774\uC57C\uAE30\uB97C \uAEBC\uB0B8\uB2E4.",
-    script:
-      "\uAE40\uD558\uC5F0\uC774 \uD6C4\uB4DC\uC9D1\uC5C5\uC744 \uB4E4\uACE0 \uC774\uC9C4\uD601\uC5D0\uAC8C \uAC04\uB2E4.\n\uAE40\uD558\uC5F0: \uC9C4\uD601\uC544, \uC774\uAC70 1\uCE35\uC5D0 \uC788\uB354\uB77C.\n\uC774\uC9C4\uD601: \uC5B4... \uACE0\uB9C8\uC6CC.\n\uC774\uC9C4\uD601\uC740 \uAE40\uD558\uC5F0\uC758 \uB4B7\uBAA8\uC2B5\uC744 \uBC14\uB77C\uBCF8\uB2E4.\n\uADF8 \uBAA8\uC2B5\uC744 \uAD50\uC2E4\uC5D0 \uB4E4\uC5B4\uC624\uB358 \uBB38\uC9C0\uC601\uC774 \uBCF8\uB2E4. \uBB38\uC9C0\uC601\uC758 \uD45C\uC815\uC774 \uC0B4\uC9DD \uAD73\uB294\uB2E4.\n\uBB38\uC9C0\uC601: \uC544\uB2C8, \uADDC\uBBFC\uC774\uAC00 \uB108 \uC88B\uC544\uD55C\uB2E4\uB294\uB370?\n\uAE40\uD558\uC5F0: \uC74C... \uC544\uB294\uB370.\n\uC885\uC774 \uC6B8\uB9B0\uB2E4. \uBB38\uC9C0\uC601\uC740 \uC758\uBBF8\uC2EC\uC7A5\uD55C \uC6C3\uC74C\uC744 \uC9D3\uACE0 \uC790\uB9AC\uB85C \uB3CC\uC544\uAC04\uB2E4.",
+    camera: "하연, 진혁, 지영 순서로 포커스를 이동해 감정의 방향을 보여준다.",
+    beat: "하연은 후드집업을 돌려주고, 지영은 진혁의 시선을 본 뒤 하연에게 규민 이야기를 꺼낸다.",
+    script: `김하연이 후드집업을 들고 이진혁에게 간다.
+김하연: 진혁아, 이거 1층에 있더라.
+이진혁: 어... 고마워.
+김하연은 자기 자리로 돌아간다.
+이진혁은 김하연의 뒷모습을 바라본다.
+그 모습을 교실에 들어오던 문지영이 본다.
+문지영의 표정이 살짝 굳는다.
+포커스가 하연, 진혁, 지영 순으로 이동한다.
+문지영이 김하연에게 다가간다.
+문지영: 하연아, 늦게 왔네.
+김하연: 응... 늦잠 잤어 ㅎ
+문지영: ㅋㅋㅋ 아 맞다, 너 그거 알아?
+김하연: 뭐?
+문지영: 아니, 규민이가 너 좋아한다는데?
+김하연: 음... 아는데.
+문지영: 헐, 어떻게 생각해?
+김하연: 으음... 몰라.
+문지영: 왜 몰라 ㅋㅋㅋ
+종이 울린다.
+문지영은 의미심장한 웃음을 짓고 자리로 돌아간다.`,
   },
   {
     id: 5,
-    title: "\uBCF5\uB3C4 \uCC3D\uAC00",
-    place: "\uBCF5\uB3C4",
-    time: "\uC810\uC2EC\uC2DC\uAC04",
-    mood: "\uC624\uD574\uC758 \uC2DC\uC791",
+    title: "복도 창가",
+    place: "복도",
+    time: "점심시간",
+    mood: "오해의 시작",
     location: "corridor",
     people: 2,
     focus: "a",
     emotion: 72,
-    camera: "\uCC3D\uBB38 \uC55E\uC744 \uC881\uAC8C \uC7A1\uC544 \uB9D0\uC18C\uB9AC\uAC00 \uBE44\uBC00\uCC98\uB7FC \uB4E4\uB9AC\uAC8C \uD55C\uB2E4. \uBCF4\uC5F0\uC774 \uC804\uD654\uB97C \uAC70\uB294 \uC190\uC744 \uD074\uB85C\uC988\uC5C5\uD55C\uB2E4.",
-    beat: "\uC9C0\uC601\uC758 \uB9D0\uC774 \uBCF4\uC5F0\uC744 \uAC70\uCCD0 \uC9C4\uD601\uC5D0\uAC8C \uC804\uB2EC\uB418\uACE0, \uAD00\uACC4\uC758 \uBC29\uD5A5\uC774 \uAE09\uACA9\uD788 \uD2C0\uC5B4\uC9C4\uB2E4.",
-    script:
-      "\uBB38\uC9C0\uC601\uACFC \uBC15\uBCF4\uC5F0\uC774 \uCC3D\uBB38 \uC55E\uC5D0 \uB098\uB780\uD788 \uC549\uC544 \uC788\uB2E4.\n\uBB38\uC9C0\uC601: \uC57C... \uC5B4\uB514 \uAC00\uC11C \uB9D0\uD558\uC9C0 \uB9D0\uACE0.\n\uBC15\uBCF4\uC5F0: \uBB54\uB370?\n\uBB38\uC9C0\uC601: \uD558\uC5F0\uC774\uAC00 \uC9C4\uD601\uC774 \uBD80\uB2F4\uC2A4\uB7FD\uB2E4\uB358\uB370.\n\uBC15\uBCF4\uC5F0\uC740 \uC7A0\uC2DC \uB9DD\uC124\uC774\uB2E4\uAC00 \uD734\uB300\uD3F0\uC744 \uAEBC\uB0B4 \uC774\uC9C4\uD601\uC5D0\uAC8C \uC804\uD654\uD55C\uB2E4.\n\uBC15\uBCF4\uC5F0: \uD558\uC5F0\uC774\uAC00 \uB108 \uBD88\uD3B8\uD574\uD55C\uB2E4\uB294\uB370.\n\uC774\uC9C4\uD601: ...\uC54C\uC558\uC5B4.",
+    camera: "창문 앞을 좁게 잡아 말소리가 비밀처럼 들리게 한다. 보연이 전화를 거는 손을 클로즈업한다.",
+    beat: "지영의 말이 보연을 거쳐 진혁에게 전달되고, 관계의 방향이 급격히 틀어진다.",
+    script: `문지영과 박보연이 창문 앞에 나란히 앉아 있다.
+문지영이 주변을 살피고 낮은 목소리로 말한다.
+문지영: 야... 어디 가서 말하지 말고.
+박보연: 뭔데?
+문지영: 하연이가 진혁이 부담스럽다던데.
+박보연: 어...? 둘이 친한 거 아니었어?
+문지영: 모르겠어. 불편하다더라, 아까.
+박보연: 헐...
+문지영이 자리에서 일어난다.
+문지영: 나 화장실 좀.
+문지영은 화장실로 들어간다.
+박보연은 잠시 망설이다가 휴대폰을 꺼내 이진혁에게 전화한다.
+박보연: 야...
+이진혁: 왜?
+박보연: 하연이가 너 불편해한다는데.
+이진혁: 어...?
+박보연: 방금 지영이한테 들은 건데... 둘이 워낙 친하잖아...
+이진혁: ...알았어.
+이진혁이 전화를 끊는다.
+박보연은 휴대폰을 보며 찜찜한 표정을 짓는다.`,
   },
   {
     id: 6,
-    title: "\uD53C\uD558\uB294 \uB0A0\uB4E4",
-    place: "\uD559\uAD50 \uBC18\uACFC \uBCF5\uB3C4",
-    time: "\uB2E4\uC74C\uB0A0\uACFC \uB2E4\uB2E4\uC74C\uB0A0 \uC26C\uB294\uC2DC\uAC04",
-    mood: "\uAC70\uB9AC\uAC10",
+    title: "피하는 날들",
+    place: "학교 반과 복도",
+    time: "다음날과 다다음날 쉬는시간",
+    mood: "거리감",
     location: "corridor",
     people: 2,
     focus: "both",
     emotion: 66,
-    camera: "\uBC18\uBCF5\uB418\uB294 \uC138 \uBC88\uC758 \uD68C\uD53C\uB97C \uC9E7\uC740 \uCEF7\uC73C\uB85C \uC313\uB294\uB2E4. \uD558\uC5F0\uC774 \uB2E4\uAC00\uC624\uBA74 \uC9C4\uD601\uC774 \uD504\uB808\uC784 \uBC16\uC73C\uB85C \uBE60\uC9C4\uB2E4.",
-    beat: "\uD558\uC5F0\uC740 \uC774\uC720\uB97C \uBAA8\uB978 \uCC44 \uC9C4\uD601\uC774 \uC790\uC2E0\uC744 \uD53C\uD55C\uB2E4\uB294 \uC0AC\uC2E4\uB9CC \uC810\uC810 \uC120\uBA85\uD558\uAC8C \uB290\uB080\uB2E4.",
-    script:
-      "\uAE40\uD558\uC5F0\uC774 \uC774\uC9C4\uD601 \uADFC\uCC98\uB85C \uB2E4\uAC00\uC628\uB2E4. \uD558\uC9C0\uB9CC \uC774\uC9C4\uD601\uC740 \uACC4\uC18D \uD53C\uD55C\uB2E4.\n\uCCAB \uBC88\uC9F8, \uAE40\uD558\uC5F0\uC774 \uBD80\uB974\uC790 \uC774\uC9C4\uD601\uC774 \uB2E4\uB978 \uCABD\uC73C\uB85C \uBAB8\uC744 \uB3CC\uB9B0\uB2E4.\n\uB450 \uBC88\uC9F8, \uBCF5\uB3C4\uC5D0\uC11C \uAE40\uD558\uC5F0\uC774 \uB2E4\uAC00\uC624\uC790 \uC774\uC9C4\uD601\uC774 \uBA3C\uC800 \uC790\uB9AC\uB97C \uB72C\uB2E4.\n\uC138 \uBC88\uC9F8, \uAD50\uC2E4 \uBB38 \uC55E\uC5D0\uC11C \uB458\uC758 \uB208\uC774 \uB9C8\uC8FC\uCE5C\uB2E4. \uC774\uC9C4\uD601\uC774 \uBA3C\uC800 \uC2DC\uC120\uC744 \uD53C\uD558\uACE0 \uB098\uAC00\uBC84\uB9B0\uB2E4.\n\uAE40\uD558\uC5F0\uC740 \uC810\uC810 \uC758\uC544\uD55C \uD45C\uC815\uC744 \uC9D3\uB294\uB2E4.",
+    camera: "반복되는 세 번의 회피를 짧은 컷으로 쌓는다. 하연이 다가오면 진혁이 프레임 밖으로 빠진다.",
+    beat: "하연은 이유를 모른 채 진혁이 자신을 피한다는 사실만 점점 선명하게 느낀다.",
+    script: `김하연이 이진혁 근처로 다가온다.
+하지만 이진혁은 계속 피한다.
+첫 번째.
+김하연: 진혁아 - 이진혁이 다른 쪽으로 몸을 돌린다.
+두 번째, 복도에서 김하연이 다가오자 이진혁이 먼저 자리를 뜬다.
+세 번째, 교실 문 앞에서 둘의 눈이 마주친다.
+이진혁이 먼저 시선을 피하고 나가버린다.
+김하연은 점점 의아한 표정을 짓는다.`,
   },
   {
     id: 7,
-    title: "\uC885\uB840 \uD6C4 \uAD50\uC2E4",
-    place: "\uD559\uAD50 \uBC18",
-    time: "\uC885\uB840 \uD6C4",
-    mood: "\uC870\uC6A9\uD55C \uC870\uC885",
+    title: "종례 후 교실",
+    place: "학교 반",
+    time: "종례 후",
+    mood: "조용한 조종",
     location: "class",
     people: 3,
     focus: "b",
     emotion: 58,
-    camera: "\uC9C0\uC601\uC740 \uB4A4\uCABD\uC5D0 \uC791\uAC8C \uB450\uACE0, \uADDC\uBBFC\uACFC \uD558\uC5F0\uC774 \uAD50\uC2E4\uC744 \uB098\uAC00\uB294 \uB3D9\uC120\uC744 \uAE38\uAC8C \uBCF4\uC5EC\uC900\uB2E4.",
-    beat: "\uBB38\uC9C0\uC601\uC758 \uB3C5\uB824\uB97C \uBC1B\uC740 \uADDC\uBBFC\uC774 \uD558\uC5F0\uC5D0\uAC8C \uB2E4\uAC00\uAC00\uACE0, \uB458\uC740 \uD568\uAED8 \uAD50\uC2E4\uC744 \uB098\uC120\uB2E4.",
-    script:
-      "\uAE40\uD558\uC5F0\uC774 \uCCAD\uC18C\uB97C \uD558\uACE0 \uC788\uB2E4. \uAD50\uC2E4 \uBB38 \uCABD\uC5D0\uC11C \uBB38\uC9C0\uC601\uACFC \uAD6C\uADDC\uBBFC\uC774 \uC791\uAC8C \uC774\uC57C\uAE30\uB97C \uB098\uB208\uB2E4.\n\uBB38\uC9C0\uC601: \uC9C0\uAE08 \uB9D0\uD574\uBD10.\n\uAD6C\uADDC\uBBFC\uC774 \uAE40\uD558\uC5F0\uC5D0\uAC8C \uB2E4\uAC00\uAC04\uB2E4.\n\uAD6C\uADDC\uBBFC: \uD558\uC5F0\uC544, \uB098 \uBC88\uD638 \uC904 \uC218 \uC788\uC5B4?\n\uAE40\uD558\uC5F0: \uADF8\uB798!\n\uAD6C\uADDC\uBBFC: \uC9C0\uAE08 \uC2DC\uAC04 \uB3FC? \uAC19\uC774 \uB180\uC790.\n\uAE40\uD558\uC5F0: \uC88B\uC544. \uC5B4\uB514 \uAC08\uB798?\n\uB458\uC740 \uC6C3\uC73C\uBA70 \uAD50\uC2E4\uC744 \uB098\uAC04\uB2E4. \uBB38\uC9C0\uC601\uC740 \uADF8 \uBAA8\uC2B5\uC744 \uC9C0\uCF1C\uBCF4\uBA70 \uC791\uAC8C \uBBF8\uC18C \uC9D3\uB294\uB2E4.",
+    camera: "지영은 뒤쪽에 작게 두고, 규민과 하연이 교실을 나가는 동선을 길게 보여준다.",
+    beat: "문지영의 독려를 받은 규민이 하연에게 다가가고, 둘은 함께 교실을 나선다.",
+    script: `김하연이 청소를 하고 있다.
+교실 문 쪽에서 문지영과 구규민이 작게 이야기를 나눈다.
+문지영: (작게) 지금 말해봐.
+구규민이 긴장한 표정으로 고개를 끄덕인다.
+구규민이 김하연에게 다가간다.
+구규민: 하연아, 나 번호 줄 수 있어?
+김하연: (웃으며) 그래!
+구규민: 지금 시간 돼? 같이 놀자.
+김하연: 좋아. 어디 갈래?
+둘은 웃으며 교실을 나간다.
+문지영은 그 모습을 지켜보며 작게 미소 짓는다.`,
   },
   {
     id: 8,
-    title: "\uC774\uB978 \uC544\uCE68 \uAD50\uC2E4",
-    place: "\uD559\uAD50 \uBC18",
-    time: "\uB2E4\uC74C\uB0A0 \uC774\uB978 \uC544\uCE68",
-    mood: "\uACE0\uBC31\uACFC \uAC70\uC808",
+    title: "이른 아침 교실",
+    place: "학교 반",
+    time: "다음날 이른 아침",
+    mood: "고백과 거절",
     location: "class",
     people: 3,
     focus: "both",
     emotion: 86,
-    camera: "\uB450 \uC0AC\uB78C \uC0AC\uC774\uC5D0 \uAE34 \uC815\uC801\uC744 \uB454\uB2E4. \uACE0\uBC31 \uD6C4 \uADDC\uBBFC\uC774 \uB4E4\uC5B4\uC624\uB294 \uC21C\uAC04 \uD504\uB808\uC784\uC758 \uADE0\uD615\uC774 \uAE68\uC9C4\uB2E4.",
-    beat: "\uC9C4\uD601\uC740 \uB9C8\uC74C\uC744 \uACE0\uBC31\uD558\uC9C0\uB9CC \uD558\uC5F0\uC740 \uAC19\uC740 \uAC10\uC815\uC740 \uC544\uB2C8\uB77C\uACE0 \uB9D0\uD55C\uB2E4. \uC624\uD574\uC600\uB2E4\uB294 \uC0AC\uC2E4\uB3C4 \uB4DC\uB7EC\uB09C\uB2E4.",
-    script:
-      "\uAE40\uD558\uC5F0\uC774 \uD63C\uC790 \uC549\uC544 \uC219\uC81C\uB97C \uD558\uACE0 \uC788\uB2E4. \uAD50\uC2E4 \uBB38\uC774 \uC5F4\uB9AC\uACE0 \uC774\uC9C4\uD601\uC774 \uB4E4\uC5B4\uC628\uB2E4.\n\uAE40\uD558\uC5F0: \uB108 \uC65C \uADF8\uB798 \uC694\uC998. \uC790\uAFB8 \uB098 \uD53C\uD558\uACE0... \uB108 \uB098 \uC2EB\uC5B4?\n\uC774\uC9C4\uD601: \uB0B4\uAC00 \uB108\uB97C \uC65C \uC2EB\uC5B4\uD574...\n\uAE40\uD558\uC5F0: ...\n\uC774\uC9C4\uD601: \uB098 \uB108 \uC88B\uC544\uD558\uB294\uB370.\n\uC774\uC9C4\uD601: \uB108\uAC00 \uBB38\uC9C0\uC601\uD55C\uD14C \uB098 \uBD88\uD3B8\uD558\uB2E4\uACE0 \uD588\uB2E4\uB9E4...\n\uAE40\uD558\uC5F0: \uBBF8\uC548\uD574. \uB098\uB294 \uB108\uB791 \uAC19\uC740 \uAC10\uC815\uC740 \uC544\uB2CC \uAC83 \uAC19\uC544.\n\uAE40\uD558\uC5F0: \uADFC\uB370 \uB09C \uB108\uAC00 \uBD88\uD3B8\uD558\uB2E4\uACE0 \uB290\uB080 \uC801\uB3C4 \uC5C6\uACE0, \uB9D0\uD55C \uC801\uB3C4 \uC5C6\uC5B4... \uBB54\uAC00 \uC624\uD574\uD55C \uAC70 \uC544\uB2D0\uAE4C..\n\uAE40\uD558\uC5F0: \uC6B0\uB9AC \uADF8\uB0E5 \uCE5C\uAD6C\uB85C \uC9C0\uB0B4\uC790. \uB108\uB791 \uC5B4\uC0C9\uD574\uC9C0\uAE30 \uC2EB\uC5B4...\n\uADF8\uB54C \uAD6C\uADDC\uBBFC\uC774 \uAD50\uC2E4\uB85C \uB4E4\uC5B4\uC628\uB2E4. \uC774\uC9C4\uD601\uC740 \uADF8 \uC7A5\uBA74\uC744 \uBCF8\uB2E4.",
+    camera: "두 사람 사이에 긴 정적을 둔다. 고백 후 규민이 들어오는 순간 프레임의 균형이 깨진다.",
+    beat: "진혁은 마음을 고백하지만 하연은 같은 감정은 아니라고 말한다. 오해였다는 사실도 드러난다.",
+    script: `김하연이 혼자 앉아 숙제를 하고 있다.
+교실 문이 열리고 이진혁이 들어온다.
+둘의 눈이 마주친다.
+잠시 어색한 정적.
+김하연: 야...
+이진혁: ...응.
+김하연: 너 왜 그래 요즘. 자꾸 나 피하고... 너 나 싫어?
+이진혁: (대답하지 못하고 바닥을 본다.)
+김하연: 야...
+이진혁: 내가 너를 왜 싫어해...
+김하연: ...
+이진혁: 나 너 좋아하는데.
+김하연: 어...?
+이진혁: 너가 문지영한테 나 불편하다고 했다매...
+김하연: ...미안해. 나는 너랑 같은 감정은 아닌 것 같아.
+김하연: 근데 난 너가 불편하다고 느낀 적도 없고, 말한 적도 없어... 뭔가 오해한 거 아닐까...
+잠시 정적이 흐른다.
+김하연: 우리 그냥 친구로 지내자. 너랑 어색해지기 싫어...
+이진혁: 그래... 그러자.
+그때 구규민이 교실로 들어온다.
+김하연과 구규민의 눈이 마주친다.
+구규민이 옅게 웃는다.
+이진혁은 그 장면을 본다.`,
   },
   {
     id: 9,
-    title: "\uC138\uBA74\uB300 \uC55E",
-    place: "\uB0A8\uB140\uD654\uC7A5\uC2E4 \uC0AC\uC774 \uC138\uBA74\uB300",
-    time: "\uC810\uC2EC\uC2DC\uAC04",
-    mood: "\uD63C\uB780",
+    title: "세면대 앞",
+    place: "남녀화장실 사이 세면대",
+    time: "점심시간",
+    mood: "혼란",
     location: "sink",
     people: 3,
     focus: "a",
     emotion: 64,
-    camera: "\uC138\uBA74\uB300\uB97C \uC911\uC2EC\uC73C\uB85C \uC778\uBB3C\uC744 \uC881\uAC8C \uBC30\uCE58\uD574 \uC9C4\uC2E4\uC744 \uD655\uC778\uD558\uB824\uB294 \uB2F5\uB2F5\uD568\uC744 \uB9CC\uB4E0\uB2E4.",
-    beat: "\uD558\uC5F0\uC774 \uC9C0\uC601\uC5D0\uAC8C \uBB3B\uC9C0\uB9CC \uC9C0\uC601\uC740 \uBD80\uC815\uD55C\uB2E4. \uD558\uC5F0\uC740 \uD655\uC2E0\uD558\uC9C0 \uBABB\uD55C \uCC44 \uADDC\uBBFC\uACFC \uD568\uAED8 \uC774\uB3D9\uD55C\uB2E4.",
-    script:
-      "\uAE40\uD558\uC5F0\uC774 \uBB38\uC9C0\uC601\uC744 \uBD99\uC7A1\uACE0 \uBB3B\uB294\uB2E4.\n\uAE40\uD558\uC5F0: \uB108\uAC00 \uADF8\uB7AC\uC5B4?\n\uBB38\uC9C0\uC601: \uB098 \uADF8\uB7F0 \uC801 \uC5C6\uC5B4!\n\uAE40\uD558\uC5F0: \uC5B4...? \uC9C4\uC9DC\uC9C0?\n\uBB38\uC9C0\uC601: \uC751, \uC9C4\uC9DC\uB85C.\n\uADF8\uB54C \uAD6C\uADDC\uBBFC\uC774 \uAC78\uC5B4\uC628\uB2E4.\n\uAD6C\uADDC\uBBFC: \uBB54 \uC598\uAE30\uD574?\n\uAE40\uD558\uC5F0: \uC751? \u314E\u314E \uC544\uBB34\uAC83\uB3C4 \uC544\uB2C8\uC57C.\n\uAD6C\uADDC\uBBFC: \uD558\uC5F0\uC544, \uC624\uB298\uB3C4 \uB05D\uB098\uACE0 \uC2DC\uAC04 \uB3FC?\n\uAE40\uD558\uC5F0: \uC5C9, \uC2DC\uAC04 \uB9CE\uC544 \uC624\uB298.",
+    camera: "세면대를 중심으로 인물을 좁게 배치해 진실을 확인하려는 답답함을 만든다.",
+    beat: "하연이 지영에게 묻지만 지영은 부정한다. 하연은 확신하지 못한 채 규민과 함께 이동한다.",
+    script: `김하연이 문지영을 붙잡고 묻는다.
+김하연: 너가 그랬어?
+문지영: 나 그런 적 없어!
+김하연: 어...? 진짜지?
+문지영: 응, 진짜로.
+그때 구규민이 걸어온다.
+구규민: 뭔 얘기해?
+김하연: 응? ㅎㅎ 아무것도 아니야.
+문지영은 웃으며 먼저 자리를 떠난다.
+김하연은 여전히 조금 헷갈린 표정이다.
+구규민: 하연아, 오늘도 끝나고 시간 돼?
+김하연: 엉, 시간 많아 오늘.
+구규민: 잘 됐다!
+둘은 함께 걸어간다.`,
   },
   {
     id: 10,
-    title: "\uC810\uC2EC\uC2DC\uAC04 \uAD50\uC2E4",
-    place: "\uD559\uAD50 \uBC18",
-    time: "\uC810\uC2EC\uC2DC\uAC04",
-    mood: "\uC18C\uBB38\uC758 \uBC18\uC804",
+    title: "점심시간 교실",
+    place: "학교 반",
+    time: "점심시간",
+    mood: "소문의 반전",
     location: "class",
     people: 3,
     focus: "a",
     emotion: 73,
-    camera: "\uBCF4\uC5F0\uC774 \uC5C6\uB294 \uACF5\uAC04\uC744 \uBA3C\uC800 \uBCF4\uC5EC\uC900 \uB4A4 \uC9C0\uC601\uACFC \uCE5C\uAD6C\uB4E4\uC758 \uAC00\uAE4C\uC6B4 \uB300\uD654\uB97C \uBD99\uC778\uB2E4.",
-    beat: "\uBB38\uC9C0\uC601\uC740 \uC774\uBC88\uC5D0\uB294 \uBC15\uBCF4\uC5F0\uC774 \uBE44\uBC00\uC744 \uB9D0\uD558\uACE0 \uB2E4\uB2CC\uB2E4\uB294 \uC18C\uBB38\uC744 \uB9CC\uB4E0\uB2E4.",
-    script:
-      "\uBB38\uC9C0\uC601\uC774 \uAD50\uC2E4\uB85C \uB4E4\uC5B4\uC628\uB2E4. \uBC15\uBCF4\uC5F0\uC774 \uC5C6\uB294 \uAC78 \uD655\uC778\uD558\uACE0 \uCE5C\uAD6C1, \uCE5C\uAD6C2\uC5D0\uAC8C \uB2E4\uAC00\uAC04\uB2E4.\n\uBB38\uC9C0\uC601: \uC57C... \uBC15\uBCF4\uC5F0\uC774 \uB0B4 \uBE44\uBC00 \uB2E4 \uB9D0\uD558\uACE0 \uB2E4\uB2C8\uB294\uB370.\n\uCE5C\uAD6C1: \uD5D0, \uC9C4\uC9DC\uB85C?\n\uCE5C\uAD6C2: \uC640, \uADF8\uB807\uAC8C \uC548 \uBD24\uB294\uB370...\n\uBB38\uC9C0\uC601\uC740 \uC77C\uBD80\uB7EC \uC18D\uC0C1\uD55C \uCC99 \uB9D0\uD55C\uB2E4. \uCE5C\uAD6C\uB4E4\uC740 \uAE08\uC138 \uADF8 \uB9D0\uC744 \uBBFF\uB294\uB2E4.",
+    camera: "보연이 없는 공간을 먼저 보여준 뒤 지영과 친구들의 가까운 대화를 붙인다.",
+    beat: "문지영은 이번에는 박보연이 비밀을 말하고 다닌다는 소문을 만든다.",
+    script: `문지영이 교실로 들어온다.
+박보연이 없는 걸 확인하고 친구1, 친구2에게 다가간다.
+문지영: 야... 박보연이 내 비밀 다 말하고 다니는데.
+친구1: 헐, 진짜로?
+친구2: 와, 그렇게 안 봤는데...
+문지영: 오해라고 생각했는데 진짜더라...
+친구2: 와, 어떻게 그러지.
+문지영은 일부러 속상한 척 말한다.
+친구들은 금세 그 말을 믿는다.`,
   },
   {
     id: 11,
-    title: "\uBCF5\uB3C4 \uC758\uC790",
-    place: "\uBCF5\uB3C4 \uC758\uC790",
-    time: "\uC26C\uB294\uC2DC\uAC04",
-    mood: "\uACE0\uB9BD",
+    title: "복도 의자",
+    place: "복도 의자",
+    time: "쉬는시간",
+    mood: "고립",
     location: "corridor",
     people: 3,
     focus: "a",
     emotion: 79,
-    camera: "\uBCF4\uC5F0\uC744 \uD504\uB808\uC784 \uD55C\uCABD \uAD6C\uC11D\uC5D0 \uB0A8\uAE30\uACE0, \uB2E4\uB978 \uCE5C\uAD6C\uB4E4\uC774 \uBE60\uC838\uB098\uAC00\uB294 \uB3D9\uC120\uC744 \uCC28\uAC11\uAC8C \uBCF4\uC5EC\uC900\uB2E4.",
-    beat: "\uCE5C\uAD6C\uB4E4\uC758 \uC2DC\uC120\uACFC \uB9D0 \uB54C\uBB38\uC5D0 \uBCF4\uC5F0\uC740 \uC544\uBB34 \uB9D0\uB3C4 \uD558\uC9C0 \uBABB\uD55C \uCC44 \uC0C1\uCC98\uBC1B\uB294\uB2E4.",
-    script:
-      "\uBB38\uC9C0\uC601\uACFC \uCE5C\uAD6C1, \uCE5C\uAD6C2\uAC00 \uBCF5\uB3C4 \uC758\uC790\uC5D0 \uC549\uC544 \uC788\uB2E4. \uBC15\uBCF4\uC5F0\uC774 \uB2E4\uAC00\uC624\uC790 \uC138 \uC0AC\uB78C\uC740 \uB208\uCE58\uB97C \uC8FC\uBA70 \uC2AC\uCA4D \uC790\uB9AC\uB97C \uC62E\uAE34\uB2E4.\n\uBC15\uBCF4\uC5F0\uC740 \uB2F9\uD669\uD55C \uCC44 \uC11C \uC788\uB2E4\uAC00 \uAD6C\uC11D\uC73C\uB85C \uAC00\uC11C \uC549\uB294\uB2E4.\n\uBB38\uC9C0\uC601: \uC640, \uC9C4\uC9DC \uADF8\uAC74 \uC880 \uC544\uB2C8\uC9C0 \uC54A\uB0D0.\n\uCE5C\uAD6C1: \uADF8\uB2C8\uAE4C \u314B\u314B\u314B\n\uCE5C\uAD6C2: \uADF8\uB7F0 \uC560\uB791 \uC65C \uCE5C\uAD6C\uB85C \uC9C0\uB0C8\uC9C0?\n\uBC15\uBCF4\uC5F0\uC740 \uC544\uBB34 \uB9D0\uB3C4 \uD558\uC9C0 \uBABB\uD558\uACE0 \uC0C1\uCC98\uBC1B\uC740 \uD45C\uC815\uC73C\uB85C \uACE0\uAC1C\uB97C \uC219\uC778\uB2E4.",
+    camera: "보연을 프레임 한쪽 구석에 남기고, 다른 친구들이 빠져나가는 동선을 차갑게 보여준다.",
+    beat: "친구들의 시선과 말 때문에 보연은 아무 말도 하지 못한 채 상처받는다.",
+    script: `문지영과 친구1, 친구2가 복도 의자에 앉아 있다.
+박보연이 다가오자 세 사람은 눈치를 주며 슬쩍 자리를 옮긴다.
+박보연은 당황한 채 서 있다가 구석으로 가서 앉는다.
+문지영: 와, 진짜 그건 좀 아니지 않냐.
+친구1: 그니까 ㅋㅋㅋ
+친구2: 그런 애랑 왜 친구로 지냈지?
+친구1: 야, 걔 처음부터 느낌이 좀 별로였어.
+문지영: ㄹㅇ.
+박보연은 아무 말도 하지 못하고 상처받은 표정으로 고개를 숙인다.`,
   },
   {
     id: 12,
-    title: "\uD558\uAD50 \uD6C4 \uAD50\uC2E4",
-    place: "\uD559\uAD50 \uBC18\uACFC \uACC4\uB2E8",
-    time: "\uD558\uAD50 \uC2DC\uAC04 \uD6C4",
-    mood: "\uC774\uC5B4\uC9C0\uB294 \uB9C8\uC74C",
+    title: "하교 후 교실",
+    place: "학교 반과 계단",
+    time: "하교 시간 후",
+    mood: "이어지는 마음",
     location: "class",
     people: 2,
     focus: "both",
     emotion: 51,
-    camera: "\uAD50\uC2E4\uC758 \uBE48 \uACF5\uAC04\uC5D0\uC11C \uACE0\uBC31\uC744 \uBCF4\uC5EC\uC900 \uB4A4, \uACC4\uB2E8\uC744 \uB0B4\uB824\uAC00\uB294 \uC190\uC758 \uC6C0\uC9C1\uC784\uC73C\uB85C \uAD00\uACC4 \uBCC0\uD654\uB97C \uBCF4\uC5EC\uC900\uB2E4.",
-    beat: "\uADDC\uBBFC\uACFC \uD558\uC5F0\uC740 \uC11C\uB85C\uC758 \uB9C8\uC74C\uC744 \uD655\uC778\uD558\uACE0 \uC190\uC744 \uC7A1\uC740 \uCC44 \uAD50\uC2E4 \uBC16\uC73C\uB85C \uB098\uAC04\uB2E4.",
-    script:
-      "\uD559\uC0DD\uB4E4\uC774 \uB2E4 \uB5A0\uB09C \uAD50\uC2E4. \uAD6C\uADDC\uBBFC\uACFC \uAE40\uD558\uC5F0 \uB458\uB9CC \uB0A8\uC544 \uC788\uB2E4.\n\uAD6C\uADDC\uBBFC: \uD558\uC5F0\uC544, \uB098 \uC0AC\uC2E4...\n\uAE40\uD558\uC5F0: \uC0B4\uC9DD \uC6C3\uB294\uB2E4.\n\uAD6C\uADDC\uBBFC: \uB108 \uB9CE\uC774 \uC88B\uC544\uD574.\n\uAE40\uD558\uC5F0: \uB098\uB3C4.\n\uB458\uC774 \uD65C\uC9DD \uC6C3\uB294\uB2E4. \uD568\uAED8 \uAD50\uC2E4\uC744 \uB098\uC120\uB2E4.\n\uACC4\uB2E8\uC744 \uB0B4\uB824\uAC00\uB358 \uC911 \uAE40\uD558\uC5F0\uC774 \uC790\uC5F0\uC2A4\uB7FD\uAC8C \uAD6C\uADDC\uBBFC\uC758 \uC190\uC744 \uC7A1\uB294\uB2E4.",
+    camera: "교실의 빈 공간에서 고백을 보여준 뒤, 계단을 내려가는 손의 움직임으로 관계 변화를 보여준다.",
+    beat: "규민과 하연은 서로의 마음을 확인하고 손을 잡은 채 교실 밖으로 나간다.",
+    script: `학생들이 다 떠난 교실.
+구규민과 김하연 둘만 남아 있다.
+구규민이 긴장한 채 김하연을 본다.
+구규민: 하연아, 나 사실...
+김하연: (살짝 웃는다.)
+구규민: 너 많이 좋아해.
+김하연: 나도.
+둘이 활짝 웃는다.
+함께 교실을 나선다.
+계단을 내려가던 중 김하연이 자연스럽게 구규민의 손을 잡는다.
+구규민은 잠깐 놀라지만 곧 웃는다.
+둘은 손을 잡은 채 걸어 내려간다.`,
   },
   {
     id: 13,
-    title: "\uB2E4\uC2DC \uB18D\uAD6C\uC7A5",
-    place: "\uD559\uAD50 \uB18D\uAD6C\uC7A5",
-    time: "\uD558\uAD50 \uC2DC\uAC04 \uD6C4",
-    mood: "\uC0C1\uC2E4\uACFC \uC815\uC801",
+    title: "다시 농구장",
+    place: "학교 농구장",
+    time: "하교 시간 후",
+    mood: "상실과 정적",
     location: "court",
     people: 3,
     focus: "a",
     emotion: 88,
-    camera: "\uCC98\uC74C\uACFC \uAC19\uC740 \uAD6C\uB3C4\uB97C \uBC18\uBCF5\uD558\uB418 \uB354 \uC5B4\uB461\uAC8C \uC7A1\uB294\uB2E4. \uBA40\uB9AC \uC9C0\uB098\uAC00\uB294 \uD558\uC5F0\uACFC \uADDC\uBBFC\uC740 \uC791\uACE0 \uC870\uC6A9\uD558\uAC8C \uB454\uB2E4.",
-    beat: "\uC9C4\uD601\uC740 \uB9C8\uC9C0\uB9C9 \uC29B\uC744 \uB123\uACE0, \uD558\uC5F0\uACFC \uADDC\uBBFC\uC774 \uC190\uC7A1\uACE0 \uC9C0\uB098\uAC00\uB294 \uBAA8\uC2B5\uC744 \uD55C\uCC38 \uBC14\uB77C\uBCF8\uB2E4.",
-    script:
-      "\uCC98\uC74C \uC7A5\uBA74\uC73C\uB85C \uB3CC\uC544\uC628\uB2E4.\n\uB9C8\uC9C0\uB9C9 \uC29B\uC774 \uB4E4\uC5B4\uAC04\uB2E4. \uC774\uC9C4\uD601\uC774 \uCC9C\uCC9C\uD788 \uACE8\uB300 \uC544\uB798\uB85C \uAC78\uC5B4\uAC04\uB2E4.\n\uACF5\uC744 \uC8FC\uC6B4 \uB4A4, \uD798\uC774 \uBE60\uC9C4 \uB4EF \uACE8\uB300\uC5D0 \uAE30\uB300 \uC549\uB294\uB2E4. \uACF5\uC744 \uD488\uC5D0 \uC548\uC740 \uCC44 \uBA4D\uD558\uB2C8 \uC55E\uC744 \uBCF8\uB2E4.\n\uBA40\uB9AC\uC11C \uAE40\uD558\uC5F0\uACFC \uAD6C\uADDC\uBBFC\uC774 \uC190\uC744 \uC7A1\uACE0 \uC9C0\uB098\uAC04\uB2E4. \uAE40\uD558\uC5F0\uC740 \uC774\uC9C4\uD601\uC744 \uBCF4\uC9C0 \uBABB\uD55C \uCC44 \uC9C0\uB098\uCE5C\uB2E4. \uAD6C\uADDC\uBBFC\uC740 \uC7A0\uAE50 \uC774\uC9C4\uD601\uC744 \uBCF4\uC9C0\uB9CC \uACE7 \uC2DC\uC120\uC744 \uB3CC\uB9B0\uB2E4.\n\uC774\uC9C4\uD601\uC740 \uB450 \uC0AC\uB78C\uC774 \uC0AC\uB77C\uC9C4 \uBC29\uD5A5\uC744 \uD55C\uCC38 \uBC14\uB77C\uBCF8\uB2E4.\n\uC870\uC6A9\uD55C \uB18D\uAD6C\uC7A5. \uBC14\uB78C \uC18C\uB9AC\uB9CC \uB4E4\uB9B0\uB2E4.\n\uB05D.",
+    camera: "처음과 같은 구도를 반복하되 더 어둡게 잡는다. 멀리 지나가는 하연과 규민은 작고 조용하게 둔다.",
+    beat: "진혁은 마지막 슛을 넣고, 하연과 규민이 손잡고 지나가는 모습을 한참 바라본다.",
+    script: `처음 장면으로 돌아온다.
+마지막 슛이 들어간다.
+이진혁이 천천히 골대 아래로 걸어간다.
+공을 주운 뒤, 힘이 빠진 듯 골대에 기대 앉는다.
+공을 품에 안은 채 멍하니 앞을 본다.
+멀리서 김하연과 구규민이 손을 잡고 지나간다.
+김하연은 이진혁을 보지 못한 채 지나친다.
+구규민은 잠깐 이진혁을 보지만 곧 시선을 돌린다.
+이진혁은 두 사람이 사라진 방향을 한참 바라본다.
+조용한 농구장.
+바람 소리만 들린다.
+끝.`,
   },
 ];
 
@@ -220,19 +374,19 @@ const relationCaption = document.querySelector("#relationCaption");
 const relationNodes = document.querySelectorAll(".relation-node");
 
 const relationshipBeats = {
-  1: { active: ["jin", "ha"], text: "\uC9C4\uD601\uC758 \uD63C\uC790 \uB0A8\uC740 \uB18D\uAD6C\uC7A5 \uC704\uB85C \uD558\uC5F0\uACFC\uC758 \uAE30\uC5B5\uC774 \uD750\uB978\uB2E4." },
-  2: { active: ["jin", "bo", "ha"], text: "\uBCF4\uC5F0\uC740 \uC9C4\uD601\uC758 \uB9C8\uC74C\uC744 \uB208\uCE58\uCC44\uACE0, \uD6C4\uB4DC\uC9D1\uC5C5\uC740 \uB2E4\uC74C \uC7A5\uBA74\uC758 \uC5F0\uACB0\uC810\uC774 \uB41C\uB2E4." },
-  3: { active: ["gu", "ha", "ji"], text: "\uADDC\uBBFC\uC758 \uB9C8\uC74C\uC774 \uB4DC\uB7EC\uB098\uACE0, \uD558\uC5F0\uC758 \uB4F1\uC7A5\uC740 \uBAA8\uB450\uC758 \uC2DC\uC120\uC744 \uBAA8\uC740\uB2E4." },
-  4: { active: ["jin", "ha", "ji"], text: "\uC9C0\uC601\uC740 \uC9C4\uD601\uC774 \uD558\uC5F0\uC744 \uBC14\uB77C\uBCF4\uB294 \uC21C\uAC04\uC744 \uBCF4\uACE0 \uB9D0\uC758 \uBC29\uD5A5\uC744 \uBC14\uAFBC\uB2E4." },
-  5: { active: ["ji", "bo", "jin"], text: "\uC9C0\uC601\uC758 \uB9D0\uC740 \uBCF4\uC5F0\uC744 \uAC70\uCCD0 \uC9C4\uD601\uC5D0\uAC8C \uB2FF\uACE0, \uC624\uD574\uAC00 \uC2DC\uC791\uB41C\uB2E4." },
-  6: { active: ["jin", "ha"], text: "\uC9C4\uD601\uC740 \uD558\uC5F0\uC744 \uD53C\uD558\uACE0, \uD558\uC5F0\uC740 \uC774\uC720\uB97C \uBAA8\uB978 \uCC44 \uB458 \uC0AC\uC774\uC758 \uAC70\uB9AC\uB97C \uB290\uB080\uB2E4." },
-  7: { active: ["ji", "gu", "ha"], text: "\uC9C0\uC601\uC758 \uBC00\uC5B4\uBD99\uC784\uC73C\uB85C \uADDC\uBBFC\uACFC \uD558\uC5F0\uC758 \uAC70\uB9AC\uAC00 \uAC00\uAE4C\uC6CC\uC9C4\uB2E4." },
-  8: { active: ["jin", "ha", "gu"], text: "\uACE0\uBC31\uACFC \uAC70\uC808, \uADF8\uB9AC\uACE0 \uADDC\uBBFC\uC758 \uB4F1\uC7A5\uC774 \uD55C \uD504\uB808\uC784 \uC548\uC5D0\uC11C \uBD80\uB52A\uD78C\uB2E4." },
-  9: { active: ["ha", "ji", "gu"], text: "\uD558\uC5F0\uC740 \uC9C4\uC2E4\uC744 \uD655\uC778\uD558\uB824 \uD558\uC9C0\uB9CC \uC9C0\uC601\uC758 \uBD80\uC815 \uB54C\uBB38\uC5D0 \uD655\uC2E0\uD558\uC9C0 \uBABB\uD55C\uB2E4." },
-  10: { active: ["ji", "bo"], text: "\uC9C0\uC601\uC740 \uC774\uBC88\uC5D0\uB294 \uBCF4\uC5F0\uC744 \uD5A5\uD574 \uC0C8\uB85C\uC6B4 \uC18C\uBB38\uC744 \uB9CC\uB4E0\uB2E4." },
-  11: { active: ["bo", "ji"], text: "\uBCF4\uC5F0\uC740 \uB9D0\uC758 \uD750\uB984\uC5D0\uC11C \uBC00\uB824\uB098\uACE0 \uCE5C\uAD6C\uB4E4 \uC0AC\uC774\uC5D0\uC11C \uACE0\uB9BD\uB41C\uB2E4." },
-  12: { active: ["ha", "gu"], text: "\uD558\uC5F0\uACFC \uADDC\uBBFC\uC740 \uC11C\uB85C\uC758 \uB9C8\uC74C\uC744 \uD655\uC778\uD558\uACE0 \uD568\uAED8 \uAD50\uC2E4\uC744 \uB098\uC120\uB2E4." },
-  13: { active: ["jin", "ha", "gu"], text: "\uC9C4\uD601\uC740 \uAC19\uC740 \uB18D\uAD6C\uC7A5\uC5D0\uC11C \uB450 \uC0AC\uB78C\uC774 \uC9C0\uB098\uAC00\uB294 \uBAA8\uC2B5\uC744 \uC870\uC6A9\uD788 \uBC14\uB77C\uBCF8\uB2E4." },
+  1: { active: ["jin", "ha"], text: "진혁의 혼자 남은 농구장 위로 하연과의 기억이 흐른다." },
+  2: { active: ["jin", "bo", "ha"], text: "보연은 진혁의 마음을 눈치채고, 후드집업은 다음 장면의 연결점이 된다." },
+  3: { active: ["gu", "ha", "ji"], text: "규민의 마음이 드러나고, 하연의 등장은 모두의 시선을 모은다." },
+  4: { active: ["jin", "ha", "ji"], text: "지영은 진혁이 하연을 바라보는 순간을 보고 말의 방향을 바꾼다." },
+  5: { active: ["ji", "bo", "jin"], text: "지영의 말은 보연을 거쳐 진혁에게 닿고, 오해가 시작된다." },
+  6: { active: ["jin", "ha"], text: "진혁은 하연을 피하고, 하연은 이유를 모른 채 둘 사이의 거리를 느낀다." },
+  7: { active: ["ji", "gu", "ha"], text: "지영의 밀어붙임으로 규민과 하연의 거리가 가까워진다." },
+  8: { active: ["jin", "ha", "gu"], text: "고백과 거절, 그리고 규민의 등장이 한 프레임 안에서 부딪힌다." },
+  9: { active: ["ha", "ji", "gu"], text: "하연은 진실을 확인하려 하지만 지영의 부정 때문에 확신하지 못한다." },
+  10: { active: ["ji", "bo"], text: "지영은 이번에는 보연을 향해 새로운 소문을 만든다." },
+  11: { active: ["bo", "ji"], text: "보연은 말의 흐름에서 밀려나고 친구들 사이에서 고립된다." },
+  12: { active: ["ha", "gu"], text: "하연과 규민은 서로의 마음을 확인하고 함께 교실을 나선다." },
+  13: { active: ["jin", "ha", "gu"], text: "진혁은 같은 농구장에서 두 사람이 지나가는 모습을 조용히 바라본다." },
 };
 
 const sceneMotion = {
@@ -279,7 +433,7 @@ function renderScenario(filter = "") {
     .map(
       (scene) => `
         <details class="scenario-item"${scene.id === 1 ? " open" : ""}>
-          <summary><span>#${padScene(scene.id)}</span>${scene.title} \u00B7 ${scene.time}</summary>
+          <summary><span>#${padScene(scene.id)}</span>${scene.title} · ${scene.time}</summary>
           <div class="scenario-body">${scene.script}</div>
         </details>
       `,
@@ -346,13 +500,13 @@ document.querySelector("#nextScene").addEventListener("click", () => {
 playScene.addEventListener("click", () => {
   autoplay = !autoplay;
   playScene.classList.toggle("is-playing", autoplay);
-  playScene.setAttribute("aria-label", autoplay ? "\uC2A4\uD1A0\uB9AC\uBCF4\uB4DC \uBC18\uBCF5 \uC7AC\uC0DD \uC911\uC9C0" : "\uC2A4\uD1A0\uB9AC\uBCF4\uB4DC \uBC18\uBCF5 \uC7AC\uC0DD");
+  playScene.setAttribute("aria-label", autoplay ? "스토리보드 반복 재생 중지" : "스토리보드 반복 재생");
   startAutoplay();
 });
 
 relationNodes.forEach((node) => {
   node.addEventListener("click", () => {
-    relationCaption.textContent = `${node.querySelector("strong").textContent}\uC758 \uAD00\uACC4 \uC704\uCE58\uB97C \uAC15\uC870\uD588\uC2B5\uB2C8\uB2E4. \uC2A4\uD1A0\uB9AC\uBCF4\uB4DC\uAC00 \uBC18\uBCF5\uB418\uBA70 \uC7A5\uBA74\uBCC4 \uAD00\uACC4\uAC00 \uB2E4\uC2DC \uBC14\uB01D\uB2C8\uB2E4.`;
+    relationCaption.textContent = `${node.querySelector("strong").textContent}의 관계 위치를 강조했습니다. 스토리보드가 반복되며 장면별 관계가 다시 바뀝니다.`;
     relationNodes.forEach((item) => item.classList.toggle("active", item === node));
   });
 });
