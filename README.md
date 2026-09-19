@@ -1,48 +1,73 @@
-# TRAVEL — Short Film Website
+<div align="center">
 
-학교 단편영화 `TRAVEL`의 이야기와 촬영 흐름을 한눈에 보기 위해 만든 정적 웹사이트입니다. 대본을 긴 문서로만 보는 대신, 장면마다 장소·시간·감정·카메라 의도를 같이 볼 수 있게 만들었습니다.
+# 🎬 TRAVEL
 
-## 장면 데이터
+### A short film, organized scene by scene.
 
-각 장면은 JavaScript 객체 하나로 관리합니다. 대략 이런 정보가 들어 있습니다.
+학교 단편영화 `TRAVEL`의 이야기·감정·카메라 흐름을 **장면 데이터 기반 storyboard**로 정리한 정적 웹사이트입니다.
 
-- 장면 번호와 제목
-- 장소와 시간
-- 장면 분위기
-- 등장인물 수와 시선의 중심
-- 감정 강도
-- 카메라 연출 메모
-- 장면의 핵심 beat
-- 실제 대사와 행동
+<p>
+  <img alt="Static" src="https://img.shields.io/badge/site-static-2ea44f">
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000">
+  <img alt="Storyboard" src="https://img.shields.io/badge/type-interactive_storyboard-6f42c1">
+</p>
 
-## 화면이 만들어지는 방식
+[Scene Model](#scene-model) · [Render Flow](#render-flow) · [Files](#files)
 
-```text
-scenes 배열에서 장면 데이터 읽기
-        ↓
-현재 선택된 장면 결정
-        ↓
-장소 / 시간 / 인물 / 감정 / 카메라 메모 분리
-        ↓
-스토리보드 카드와 대본 영역에 렌더링
-        ↓
-사용자가 다른 장면을 고르면 현재 장면 변경
-        ↓
-같은 데이터로 화면 다시 렌더링
+</div>
+
+---
+
+대본을 긴 문서로만 보는 대신 **장면마다 장소·시간·인물·감정·카메라 의도를 함께 보기 위해** 만든 사이트입니다.
+
+## Scene model
+
+각 장면은 JavaScript object 하나로 관리합니다.
+
+| Field | Meaning |
+|---|---|
+| title / scene | 장면 번호와 제목 |
+| place / time | 장소와 시간 |
+| mood | 장면 분위기 |
+| people / focus | 등장인물과 시선 중심 |
+| emotion | 감정 강도 |
+| camera | 촬영 메모 |
+| beat | 장면의 핵심 변화 |
+| script | 실제 대사와 행동 |
+
+## Render flow
+
+```mermaid
+flowchart LR
+    A[scenes array] --> B[현재 scene 선택]
+    B --> C[장소 / 시간 / 인물 / 감정 / camera 분리]
+    C --> D[Storyboard card]
+    C --> E[Script area]
+    D --> F[사용자가 다른 scene 선택]
+    E --> F
+    F --> B
 ```
 
-대본과 화면을 따로 하드코딩하지 않고 **장면 데이터를 source of truth로 두는 방식**이라, 장면을 수정할 때 `script.js`의 해당 장면만 바꾸면 사이트의 여러 표시가 함께 맞춰집니다.
+대본과 화면을 따로 하드코딩하지 않고 **`scenes` 데이터를 source of truth로 사용**합니다. `script.js`에서 한 장면을 고치면 같은 데이터를 쓰는 여러 표시가 함께 바뀝니다.
 
-## 파일
+## Files
 
-- `index.html` — 페이지 구조
-- `styles.css` — 영화 느낌의 레이아웃과 반응형 스타일
-- `script.js` — 장면 데이터와 인터랙션
+```text
+index.html   page structure
+styles.css   cinematic layout / responsive styles
+script.js    scene data + interactions
+```
 
-## 로컬에서 보기
+## Run
 
-`index.html`을 브라우저에서 열면 됩니다.
+정적 사이트라 `index.html`을 브라우저에서 바로 열 수 있습니다.
 
-## 배포
+GitHub Pages를 사용할 경우 기본 브랜치 root를 배포 대상으로 둘 수 있습니다.
 
-정적 사이트라 기본 브랜치의 루트 폴더를 GitHub Pages로 배포할 수 있습니다.
+---
+
+<div align="center">
+
+**One story. One source of truth for every scene.**
+
+</div>
