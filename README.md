@@ -1,17 +1,48 @@
-# TRAVEL website
+# TRAVEL — Short Film Website
 
-Static homepage for the school short film `TRAVEL`.
+학교 단편영화 `TRAVEL`의 이야기와 촬영 흐름을 한눈에 보기 위해 만든 정적 웹사이트입니다. 대본을 긴 문서로만 보는 대신, 장면마다 장소·시간·감정·카메라 의도를 같이 볼 수 있게 만들었습니다.
 
-## Files
+## 장면 데이터
 
-- `index.html`: page structure
-- `styles.css`: cinematic layout and responsive styling
-- `script.js`: interactive storyboard and scenario data
+각 장면은 JavaScript 객체 하나로 관리합니다. 대략 이런 정보가 들어 있습니다.
 
-## Local preview
+- 장면 번호와 제목
+- 장소와 시간
+- 장면 분위기
+- 등장인물 수와 시선의 중심
+- 감정 강도
+- 카메라 연출 메모
+- 장면의 핵심 beat
+- 실제 대사와 행동
 
-Open `index.html` in a browser.
+## 화면이 만들어지는 방식
 
-## GitHub Pages
+```text
+scenes 배열에서 장면 데이터 읽기
+        ↓
+현재 선택된 장면 결정
+        ↓
+장소 / 시간 / 인물 / 감정 / 카메라 메모 분리
+        ↓
+스토리보드 카드와 대본 영역에 렌더링
+        ↓
+사용자가 다른 장면을 고르면 현재 장면 변경
+        ↓
+같은 데이터로 화면 다시 렌더링
+```
 
-Publish the repository from the root folder and enable GitHub Pages from the default branch.
+대본과 화면을 따로 하드코딩하지 않고 **장면 데이터를 source of truth로 두는 방식**이라, 장면을 수정할 때 `script.js`의 해당 장면만 바꾸면 사이트의 여러 표시가 함께 맞춰집니다.
+
+## 파일
+
+- `index.html` — 페이지 구조
+- `styles.css` — 영화 느낌의 레이아웃과 반응형 스타일
+- `script.js` — 장면 데이터와 인터랙션
+
+## 로컬에서 보기
+
+`index.html`을 브라우저에서 열면 됩니다.
+
+## 배포
+
+정적 사이트라 기본 브랜치의 루트 폴더를 GitHub Pages로 배포할 수 있습니다.
